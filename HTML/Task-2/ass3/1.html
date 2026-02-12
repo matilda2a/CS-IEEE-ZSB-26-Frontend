@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Task</title>
+</head>
+
+<body>
+
+    <form action="test.py" method="post">
+
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username (Required)" required>
+        <hr>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter strong password">
+        <hr>
+
+        <label for="mobile">Mobile</label><br>
+        <input type="tel" id="mobile" name="mobile" placeholder="+20100 (234) 123" pattern="\+20100\s\(\d{3}\)\s\d{3}">
+        <hr>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter valid email (Required)" required>
+        <hr>
+
+        <label for="subject">Subject</label><br>
+        <input type="text" id="subject" name="subject" placeholder="Write subject here">
+        <hr>
+
+        <input type="hidden" name="id" value="12345">
+
+        <input type="reset" value="Empty Form">
+        <input type="submit" value="Send Data">
+
+    </form>
+
+</body>
+
+</html>
