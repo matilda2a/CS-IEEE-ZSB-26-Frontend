@@ -1,0 +1,22 @@
+تكليفات HTML الدروس من الدرس 35 إلى 37
+
+HTML & Accessibility – Answers
+
+(1) Use <button type="submit"> or <input type="submit"> to submit form data
+
+(2) <h1> is used for the main title of the whole page
+
+(3) <h2> (or lower heading levels like <h3>, <h4>) are used for section headings depending on the structure
+
+(4) <p> is used to write a paragraph of text
+
+(5) The page language is defined in the <html> tag using the lang attribute, 
+for example: <html lang="en">
+
+(6) For better accessibility, writing 10–20 is preferred over 10 To 20
+
+(7) To make a <div> accessible via the Tab key, add tabindex="0" like this:
+<div tabindex="0">Content</div>
+
+(8) ARIA stands for Accessible Rich Internet Applications,
+and it provides attributes that improve accessibility for assistive technologies

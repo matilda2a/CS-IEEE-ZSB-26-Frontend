@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hope Medical Center</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hope Medical Center</h1>
+        <p><em>"Your health is our priority"</em></p>
+
+        <nav>
+            <a href="#">About Us</a> |
+            <a href="#">Our Doctors</a> |
+            <a href="#">Services</a> |
+            <a href="#">Book Appointment</a>
+        </nav>
+        <hr>
+    </header>
+
+
+    <section>
+        <h2>Welcome to Our Hospital</h2>
+
+        <img src="media/hospital.PNG" alt="Hospital Building" width="500">
+
+        <p><q>Medicine is a science of uncertainty and an art of probability.</q>
+            <br>
+            We provide top-notch medical services since <strong>1998</strong>.
+        </p>
+        <blockquote>Health is a state of complete physical, mental and social well-being.</blockquote>
+
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Our Departments</h2>
+
+        <ul>
+            <li>Cardiology</li>
+            <li>Pediatrics</li>
+            <li>Radiology</li>
+            <li>Emergency <mark>(24/7)</mark></li>
+        </ul>
+
+        <h3>Special Emergency Instructions</h3>
+
+        <p>For technical support, use this code:</p>
+
+        <pre>
+    <code>
+                 if (emergency == true) { 
+                     callNurse (station_1); 
+                 } 
+    </code>
+    </pre>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Weekly Clinic Schedule</h2>
+
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Doctor Name</th>
+                    <th>Specialty</th>
+                    <th>Available Days</th>
+                    <th>Work Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dr. Ahmed Zaki</td>
+                    <td>Dentist</td>
+                    <td>Mon - Wed</td>
+                    <td>09:00 AM - 03:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Dr. Sara Ali</td>
+                    <td>Cardiologist</td>
+                    <td colspan="2">Emergency Only</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Hospital Virtual Tour</h2>
+
+        <video controls width="400">
+            <source src="media/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h3>Hospital Podcast</h3>
+
+        <audio controls>
+            <source src="media/audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Book a Medical Appointment</h2>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Patient Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name" required>
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="blood">Blood Type:</label>
+                <select id="blood" name="blood">
+                    <option value="">Choose</option>
+                    <option>A+</option>
+                    <option>B+</option>
+                    <option>O+</option>
+                    <option>AB+</option>
+                </select>
+                <br><br>
+
+                Gender:
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Appointment Details</legend>
+
+                <label for="department">Select Department:</label>
+                <select id="department" name="department">
+                    <optgroup label="Surgical">
+                        <option>General Surgery</option>
+                        <option>Orthopedics</option>
+                    </optgroup>
+                    <optgroup label="Medical">
+                        <option>Internal Medicine</option>
+                        <option>Cardiology</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time">
+                <br><br>
+
+                <label for="pain">Pain Severity (0-100):</label>
+                <input type="range" id="pain" name="pain" min="0" max="100">
+                <br><br>
+
+                <label for="report">Upload Previous Reports (PDF):</label>
+                <input type="file" id="report" name="report" accept=".pdf">
+
+            </fieldset>
+
+            <br>
+
+            <label for="message">Message for the Doctor:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="Describe your symptoms..."></textarea>
+
+            <br><br>
+
+            <label for="terms">Terms of Service:</label>
+            <input type="text" placeholder=" Agreed ">
+
+            <br><br>
+
+            <input type="submit" value="Submit Booking">
+            <input type="reset" value="Clear Form">
+
+        </form>
+    </section>
+
+
+    <hr>
+
+    <section id="location">
+        <h2>Location on Maps</h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.123456789!2d31.2135!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c4c1f7b7bb%3A0xabcdef123456789!2sCairo!5e0!3m2!1sen!2seg!4v1700000000000"
+            width="40%" height="300" style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+    </section>
+
+
+    <hr>
+
+    <footer>
+        <p>Contact us at:<a href="mailto:info@hopehospital.com" target="_blank"> info@hopehospital.com </a></p>
+        <p>&copy; 2026 IEEE Track Leads - All Rights Reserved | &#9742; Emergency: 123</p>
+    </footer>
+
+</body>
+
+</html>
