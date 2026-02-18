@@ -1,0 +1,14 @@
+div {
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*border: 10px solid red;*/
+    border: 10px solid #009688;
+    padding: 50px;
+}
+
+p {
+    background-color: #c7c2c2;
+    border: inherit;
+    padding: inherit;
+}

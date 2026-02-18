@@ -1,0 +1,15 @@
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    text-transform: capitalize;
+
+    text-shadow:
+        2px 2px 0 #03a9f4,
+        4px 4px 0 #e91e63,
+        6px 6px 0 #9c27b0;
+}
