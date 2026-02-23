@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 800px;
+    background-color: #eee;
+    margin: 20px auto;
+}
+
+.parent div {
+    float: left;
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.full {
+    width: calc(100% - 30px);
+}
+
+.one-third {
+    width: calc((100% - 60px) / 3);
+}
+
+.half {
+    width: calc((100% - 45px) / 2);
+}
+
+.quarter {
+    width: calc((100% - 75px) / 4);
+    margin-bottom: 15px;
+}
+
+.parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}
