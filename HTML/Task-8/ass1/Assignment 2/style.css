@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ddd;
+    padding-top: 40px;
+}
+
+input {
+    display: block;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    caret-color: red;
+
+    background-image: linear-gradient(
+        to right,
+        #f44336 50%,
+        #009688 50%
+    );
+
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}

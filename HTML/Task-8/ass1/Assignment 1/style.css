@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  background-color: #eee;
+  border: 10px solid transparent;
+  background-image: 
+    linear-gradient(#eee, #eee),
+    linear-gradient(
+      to right,
+      #f44336 20%,
+      #2196f3 20% 40%,
+      #4caf50 40% 60%,
+      #e91e63 60% 80%,
+      #673ab7 80%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+div::first-letter{
+    color: #f44336;
+}
