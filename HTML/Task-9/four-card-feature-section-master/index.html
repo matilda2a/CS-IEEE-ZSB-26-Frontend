@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: hsl(0, 0%, 98%);
+      display: flex;
+      justify-content: center;
+      padding: 50px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-weight: 200;
+      color: hsl(234, 12%, 34%);
+    }
+
+    .intro h1 span {
+      font-weight: 600;
+      display: block;
+    }
+
+    .intro p {
+      margin: 20px auto 60px;
+      max-width: 500px;
+      color: hsl(229, 6%, 66%);
+      font-size: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      align-items: center;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: left;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+      position: relative;
+    }
+
+    .card h3 {
+      color: hsl(234, 12%, 34%);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: hsl(229, 6%, 66%);
+      font-size: 14px;
+    }
+
+    .card img {
+      margin-top: 30px;
+      float: right;
+    }
+
+    .supervisor {
+      border-top: 4px solid hsl(180, 62%, 55%);
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+
+    .team {
+      border-top: 4px solid hsl(0, 78%, 62%);
+    }
+
+    .karma {
+      border-top: 4px solid hsl(34, 97%, 64%);
+    }
+
+    .calculator {
+      border-top: 4px solid hsl(212, 86%, 64%);
+      grid-column: 3;
+      grid-row: 1 / span 2;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .supervisor,
+      .calculator {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="intro">
+      <h1>
+        Reliable, efficient delivery <br />
+        <span>Powered by Technology</span>
+      </h1>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </section>
+
+    <section class="cards">
+      <div class="card supervisor">
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="./images/icon-supervisor.svg" alt="">
+      </div>
+
+      <div class="card team">
+        <h3>Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" alt="">
+      </div>
+
+      <div class="card karma">
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="./images/icon-karma.svg" alt="">
+      </div>
+
+      <div class="card calculator">
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="./images/icon-calculator.svg" alt="">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

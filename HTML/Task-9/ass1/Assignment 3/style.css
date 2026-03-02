@@ -1,0 +1,53 @@
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 10px solid #e91e63;
+  border-left-color: white;
+  transition-duration: 0.5s;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 10px solid #2196f3;
+  border-right-color: white;
+  transition-duration: 0.5s;
+  transition-delay: 0.25s;
+}
+
+div:hover::before{
+  transform: rotate(360deg);
+}
+
+div:hover::after{
+  transform: rotate(360deg);
+}

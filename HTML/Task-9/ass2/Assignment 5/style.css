@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  perspective: 600px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #e91e63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+div::before,
+div::after {
+  content: "Front";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e91e63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+/*First way rotateY*/
+div::after {
+  content: "Back";
+  background-color: #03a9f4;
+  transform: rotateY(180deg);
+}
+
+div:hover {
+  transform: rotateY(180deg);
+}
+
+/*Second way rotateX*/
+/*
+div::after {
+  content: "Back";
+  background-color: #03a9f4;
+  transform: rotateX(180deg);
+}
+
+div:hover {
+  transform: rotateX(180deg);
+}
+*/

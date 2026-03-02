@@ -1,0 +1,56 @@
+:root {
+  --main-color: #159a8c;
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  padding: 20px 20px 20px 80px;
+  background-color: var(--main-color);
+  color: white;
+  position: relative;
+  font-size: 50px;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background-color: var(--main-color);
+  transform: skewX(20deg);
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: white;
+  transform: skewX(20deg);
+}
+
+/*Assignment 3*/
+
+.class {
+  transform: matrix(3, 0.2679, 0, 3, 20, 100);
+}
+
+/*matrix(scaleX, skewY, skewX, scaleY, translateX, translateY)*/
+
+/*
+scaleX(3);
+scaleY(3);
+skewY(15deg);
+skewX(0deg);
+translateX(20px);
+translateY(100px);
+*/
