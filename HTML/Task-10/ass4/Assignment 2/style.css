@@ -1,0 +1,41 @@
+.arrow {
+  position: relative;
+  background: #ddd;
+  padding: 20px;
+  margin: 40px;
+  width: 50%;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  border: 15px solid transparent;
+}
+
+.arrow.top::before {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: #ddd;
+}
+
+.arrow.right::before {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left-color: #ddd;
+}
+
+.arrow.bottom::before {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: #ddd;
+}
+
+.arrow.left::before {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right-color: #ddd;
+}
