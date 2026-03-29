@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+</head>
+
+<body>
+
+    <script>
+        let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+
+        let result = numsAndStrings
+        .filter(el => typeof el === "number")
+        //or
+        //.filter((el)=> !isNaN(el))
+        .map(el => -el);
+
+        console.log(result); // [-1, -10, 10, 20, -5, -3]
+    </script>
+</body>
+</html>

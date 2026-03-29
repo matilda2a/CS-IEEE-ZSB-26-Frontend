@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+
+    <script>
+        let myString = "EElllzzzzzzzeroo";
+
+        let result = myString
+        .split("")
+        .filter((el, index, arr) => arr.indexOf(el) === index)
+        //.reduce((acc, el) => acc + el);
+        .reduce((acc,el)=>`${acc}${el}`)
+
+        console.log(result); // Elzero
+    </script>
+</body>
+</html>
