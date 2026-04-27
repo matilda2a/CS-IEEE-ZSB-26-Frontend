@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+</head>
+
+<body>
+
+    <div class="our-element">Our Element</div>
+    <p>Paragraph</p>
+
+    <script>
+        const mainDiv = document.querySelector(".our-element");
+        const paragraph = document.querySelector("p");
+
+        paragraph.remove();
+
+        const start = document.createElement("div");
+        start.className = "start";
+        start.title = "Start Element";
+        start.setAttribute("data-value", "Start");
+        start.textContent = "Start";
+
+        const end = document.createElement("div");
+        end.className = "end";
+        end.title = "End Element";
+        end.setAttribute("data-value", "End");
+        end.textContent = "End";
+
+        mainDiv.before(start);
+        mainDiv.after(end);
+    </script>
+
+</body>
+
+</html>

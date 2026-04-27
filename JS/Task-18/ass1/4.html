@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+</head>
+
+<body>
+
+    <div class="one" title="two">Two</div>
+    <div class="two" title="one">One</div>
+
+    <script>
+        let elementOne = document.querySelector(".one");
+        let elementTwo = document.querySelector(".two");
+
+        let titleOne = elementOne.title;
+        let textOne = elementOne.textContent;
+
+        elementOne.title = elementTwo.title;
+        elementOne.textContent = elementTwo.textContent;
+
+        elementTwo.title = titleOne;
+        elementTwo.textContent = `${textOne} ${elementTwo.attributes.length}`;
+    </script>
+</body>
+
+</html>

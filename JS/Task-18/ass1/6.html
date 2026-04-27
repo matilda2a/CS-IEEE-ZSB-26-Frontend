@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 6</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Tahoma, Arial;
+        }
+
+        body {
+            margin: 0;
+            background: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        form {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: teal;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .results {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .box {
+            width: 80px;
+            padding: 10px;
+            background: teal;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <input type="number" name="elements" class="input" placeholder="Number Of Elements">
+        <input type="text" name="texts" class="input" placeholder="Elements Text">
+
+        <select name="type" class="input">
+            <option value="Div">Div</option>
+            <option value="Section">Section</option>
+        </select>
+
+        <input type="submit" value="Create">
+
+        <div class="results"></div>
+    </form>
+
+    <script>
+        const form = document.querySelector("form");
+        const output = document.querySelector(".results");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const { elements, texts, type } = form;
+
+            const count = Number(elements.value);
+            const content = texts.value;
+            const tagName = type.value.toLowerCase();
+
+            while (output.firstChild) {
+                output.removeChild(output.firstChild);
+            }
+
+            let i = 1;
+            while (i <= count) {
+                const node = document.createElement(tagName);
+
+                node.classList.add("box");
+                node.setAttribute("title", "Element");
+                node.id = "id-" + i;
+                node.append(content);
+
+                output.append(node);
+                i++;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+    <div id="elzero" class="element" name="js">JavaScript</div>
+
+    <script>
+        // Query Selector
+        console.log(document.querySelector("div"));
+        console.log(document.querySelector("#elzero"));
+        console.log(document.querySelector(".element"));
+        console.log(document.querySelector("[name='js']"));
+
+        // Query Selector All
+        console.log(document.querySelectorAll("div")[0]);
+        console.log(document.querySelectorAll("#elzero")[0]);
+        console.log(document.querySelectorAll(".element")[0]);
+        console.log(document.querySelectorAll("[name='js']")[0]);
+
+        // Get Element Methods
+        console.log(document.getElementById("elzero"));
+        console.log(document.getElementsByClassName("element")[0]);
+        console.log(document.getElementsByName("js")[0]);
+        console.log(document.getElementsByTagName("div")[0]);
+
+        // Body Methods
+        console.log(document.body.children[0]);
+        console.log(document.body.firstElementChild);
+        console.log(document.body.childNodes[1]);
+    </script>
+</body>
+
+</html>
