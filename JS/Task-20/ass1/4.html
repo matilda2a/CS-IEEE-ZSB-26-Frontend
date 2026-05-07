@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+</head>
+
+<body>
+    <script>
+        let div = document.createElement("div");
+
+        div.textContent = 10;
+
+        div.style.cssText = `
+        width: 100px;
+        padding: 20px;
+        margin: 20px auto;
+        text-align: center;
+        background-color: #eee;
+        font-size: 30px;
+        font-weight: bold;
+        `;
+
+        document.body.appendChild(div);
+
+        let counter = setInterval(function () {
+
+            div.textContent--;
+
+            if (div.textContent === "0") {
+
+                clearInterval(counter);
+
+                window.location.href = "https://elzero.org";
+
+            }
+
+        }, 1000);
+    </script>
+</body>
+
+</html>

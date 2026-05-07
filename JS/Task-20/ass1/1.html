@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+
+    <script>
+        let message = prompt("Print Number From – To");
+
+        let firstNumber = +message.split("-")[0];
+        let secondNumber = +message.split("-")[1];
+
+        if (firstNumber > secondNumber) {
+            for (let i = secondNumber; i <= firstNumber; i++) {
+                document.write(i + "<br>");
+            }
+        } else {
+            for (let i = firstNumber; i <= secondNumber; i++) {
+                document.write(i + "<br>");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
