@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+
+    <script>
+        let setOfNumbers = new Set([10]);
+
+        setOfNumbers.add(20).add(setOfNumbers.size);
+
+        console.log(setOfNumbers);
+
+        // Needed Output
+        // Set(3) {10, 20, 2}
+
+        console.log([...setOfNumbers].pop());
+        //or
+        console.log([...setOfNumbers][2]);
+
+        // 2
+    </script>
+
+</body>
+
+</html>

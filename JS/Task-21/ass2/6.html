@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 6</title>
+</head>
+
+<body>
+
+    <script>
+        //let chars = ["A", "B", "C", "D", "E", 10, 15, 6];          // 1
+        //let chars = ["A", "B", "C", 20, "D", "E", 10, 15, 6];      // 2
+        //let chars = ["Z", "Y", "A", "D", "E", 10, 1];              // 3
+        let chars = [10, 15, 6, "A", "B", "C", "D", "E"];
+
+        const letters = chars.filter(x => isNaN(x));
+        const numsCount = chars.filter(x => !isNaN(x)).length;
+        const result = [...letters.slice(0, numsCount), ...letters];
+
+        console.log(result);
+        // Needed Output
+        //['A', 'B', 'C', 'A', 'B', 'C', 'D', 'E']                  // 1
+        //['A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'E']             // 2
+        //["Z", "Y", "Z", "Y", "A", "D", "E"]                       // 3
+    </script>
+
+</body>
+
+</html>
