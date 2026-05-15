@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+</head>
+
+<body>
+    <script>
+        let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
+
+        // https? => s is optional
+        // :\/\/ => match ://
+        // (?: ) => Non-Capturing Group
+        // (?:[-\w]+\.)? => optional sub domain
+        // [-\w]+ => letters, numbers or -
+        // + => one or more
+        // ([-\w]+) => domain name
+        // \. => normal dot
+        // \w+ => domain extension
+        // (?:\.\w+)? => optional extra extension
+        // \/? => optional slash
+        // .* => any characters after the link
+        // i => case insensitive
+    </script>
+</body>
+
+</html>
