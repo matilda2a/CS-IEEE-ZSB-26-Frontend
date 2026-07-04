@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+
+    <script>
+        let myRequest = new XMLHttpRequest();
+
+        myRequest.open("GET", "articles.json");
+        myRequest.send();
+
+        myRequest.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                console.log(this.responseText);
+            }
+        };
+
+        myRequest.onload = function () {
+            console.log("Data Loaded");
+        };
+    </script>
+
+</body>
+
+</html>

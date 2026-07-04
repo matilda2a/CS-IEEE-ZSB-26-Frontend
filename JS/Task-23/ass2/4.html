@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+</head>
+
+<body>
+    <script>
+        let myRequest = new XMLHttpRequest();
+
+        myRequest.open("GET", "articles.json", true);
+        myRequest.send();
+
+        myRequest.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+
+                let mainData = JSON.parse(this.responseText);
+
+                let dataDiv = document.createElement("div");
+                dataDiv.id = "data";
+
+                for (let i = 0; i < mainData.length; i++) {
+
+                    let container = document.createElement("div");
+                    let title = document.createElement("h2");
+                    let article = document.createElement("p");
+                    let author = document.createElement("p");
+                    let category = document.createElement("p");
+
+                    title.textContent = mainData[i].title;
+                    article.textContent = mainData[i].content;
+                    author.textContent = `Author: ${mainData[i].author}`;
+                    category.textContent = `Category: ${mainData[i].category}`;
+
+                    container.append(title, article, author, category);
+                    dataDiv.appendChild(container);
+                }
+
+                document.body.appendChild(dataDiv);
+            }
+        };
+    </script>
+</body>
+
+</html>

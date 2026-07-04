@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+
+    <script>
+        fetch("articles.json")
+            .then((response) => response.json())
+            .then((allData) => {
+                allData.length = 5;
+                return allData;
+            })
+            .then((data) => {
+                let dataDiv = document.createElement("div");
+
+                for (let i = 0; i < data.length; i++) {
+                    let container = document.createElement("div");
+                    let title = document.createElement("h3");
+                    let article = document.createElement("p");
+
+                    title.textContent = data[i].title;
+                    article.textContent = data[i].description;
+
+                    container.append(title, article);
+                    dataDiv.appendChild(container);
+                }
+
+                document.body.appendChild(dataDiv);
+            })
+            .catch((err) => console.log(err));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+
+    <script>
+        let birthDate = new Date("2003-10-02");
+
+        let now = new Date();
+
+        let diff = now - birthDate;
+
+        let seconds = diff / 1000;
+        let minutes = seconds / 60;
+        let hours = minutes / 60
+        let days = hours / 24;
+        let months = days / 30;
+        let years = months / 12;
+
+        console.log(`${seconds} Seconds`);
+        console.log(`${minutes} Minutes`);
+        console.log(`${hours} Hours`);
+        console.log(`${days} Days`);
+        console.log(`${months} Months`);
+        console.log(`${years} Years`);
+    </script>
+
+</body>
+
+</html>

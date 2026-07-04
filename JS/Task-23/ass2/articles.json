@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "author": "Matilda",
+    "category": "Programming",
+    "title": "JavaScript",
+    "content": "JavaScript Programming JavaScript Programming"
+  },
+  {
+    "id": 2,
+    "author": "Sara",
+    "category": "FrontEnd",
+    "title": "HTML",
+    "content": "HTML FrontEnd HTML FrontEnd"
+  },
+  {
+    "id": 3,
+    "author": "Mariam",
+    "category": "Web Development",
+    "title": "CSS",
+    "content": "CSS Web Development CSS Web Development"
+  },
+  {
+    "id": 4,
+    "author": "Mona",
+    "category": "BackEnd",
+    "title": "JSON",
+    "content": "JSON BackEnd JSON BackEnd"
+  },
+  {
+    "id": 5,
+    "author": "Omar",
+    "category": "Programming",
+    "title": "JS",
+    "content": "JS Programming JS Programming"
+  }
+]

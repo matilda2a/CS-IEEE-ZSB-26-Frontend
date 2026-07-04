@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+</head>
+
+<body>
+
+    <script>
+        let date = new Date();
+
+        date.setMonth(date.getMonth(), 0);
+
+        let months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ];
+
+        console.log(date);
+        console.log(`Previous Month Is ${months[date.getMonth()]} And Last Day Is ${date.getDate()}`);
+
+    </script>
+</body>
+
+</html>
