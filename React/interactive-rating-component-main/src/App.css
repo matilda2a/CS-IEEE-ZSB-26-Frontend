@@ -1,0 +1,105 @@
+.card {
+  background: radial-gradient(circle at top, hsl(213, 19%, 22%), hsl(213, 19%, 15%));
+  border-radius: 25px;
+  padding: 30px;
+  max-width: 380px;
+  width: 100%;
+  margin: 20px;
+}
+
+.icon-container {
+  background-color: hsl(213, 19%, 18%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+p {
+  color: var(--light-grey);
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.rating-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(213, 19%, 18%);
+  color: var(--light-grey);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.rating-btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rating-btn.selected {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/* Thank you card styles */
+.thank-you-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thank-you-img {
+  margin-bottom: 25px;
+}
+
+.rating-result {
+  background-color: hsl(213, 19%, 18%);
+  color: var(--orange);
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.thank-you-card p {
+  margin-bottom: 0;
+}
