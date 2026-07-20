@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "../../dist/compiled/javascript",
+    "rootDir": "./typescript",
+    "sourceMap": true
+  },
+  "include": [
+    "typescript/**/*"
+  ]
+}
